@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>HALOO CANTIKK</h1>
+        <p style="font-size: 20px;">Menurutku tuh kamu cantik sih <br>tapi kenapa kamu malah gamau dibilang cantik</p>
+        <h3>KAMU CANTIKK KANNN?</h3>
+        <button id="btn_mau" onclick="alert('I LOVE YOU NINDI, CEWE AKU, AYANG AKU.')">IYAAA DONG</button>
+        <button id="btn_gamau" onclick="gamau(this)" style="position: absolute;">NGGAK LAHH!</button>
+        <div class="footer" style="margin-top: 200px;">
+            <p>&copy; Arif HIdayatullah - 2023</p>
+        </div>
+    </body>
+    <script>
+        function gamau(id){
+            var mau = document.getElementById("btn_mau");
+            var i = Math.floor(Math.random() * 300) + 1;
+            var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+            id.style.left = i + "px";
+            id.style.top = j + "px";
+        }
+    </script>
+</html>
